@@ -43,7 +43,8 @@ This app is for educational purposes only and does not replace professional medi
 Contributions are welcome! Please submit issues or pull requests for bug fixes, feature enhancements, or documentation improvements.
 
 ## Contact
-For feedback or inquiries, reach out at contact@breastcancerapp.org.
+For feedback or inquiries, reach out at contactContact us on LinkedIn  [Gehad Helmy](https://www.linkedin.com/in/gehad-helmy-505445296/) and  [Alaa Adel](http://linkedin.com/in/alaa-adel-64735034b)
+        .
 
 ---
 
