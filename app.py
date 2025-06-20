@@ -102,7 +102,6 @@ st.markdown(
 
 # Sidebar navigation
 st.sidebar.title("Breast Cancer Awareness")
-st.sidebar.write("This app is designed to provide information and resources related to breast cancer awareness.")
 page = st.sidebar.radio("Navigate to", ["Home", "Analysis", "Prevention", "Self-Check", "Prediction","Hospitals","About Us"])
 
 # Load and preprocess data for analysis
