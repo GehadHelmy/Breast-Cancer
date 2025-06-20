@@ -508,7 +508,7 @@ elif page == "Hospitals":
     st.markdown("<div class='motivational-quote'>You are stronger than you know. Take charge of your health today!</div>", unsafe_allow_html=True)
 
 # About Page
-elif page == "About US":
+elif page == "About Us":
     st.title("About the Breast Cancer Awareness App")
     st.write("""
     The Breast Cancer Awareness App is a dedicated platform designed to educate, empower, and support individuals in understanding breast cancer, 
