@@ -12,7 +12,7 @@ from sklearn.feature_selection import RFE
 # Set page configuration with pink theme and breast cancer ribbon icon
 st.set_page_config(
     page_title="Breast Cancer Awareness App",
-    page_icon="🎗️",  # Breast cancer ribbon emoji
+    page_icon="🎗️",  
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -103,7 +103,7 @@ st.markdown(
 # Sidebar navigation
 st.sidebar.title("Breast Cancer Awareness")
 st.sidebar.write("This app is designed to provide information and resources related to breast cancer awareness.")
-page = st.sidebar.radio("Navigate to", ["Home", "Analysis", "Prevention", "Self-Check", "Prediction", "About"])
+page = st.sidebar.radio("Navigate to", ["Home", "Analysis", "Prevention", "Self-Check", "Prediction","Hospitals","About Us"])
 
 # Load and preprocess data for analysis
 @st.cache_data
@@ -447,8 +447,69 @@ elif page == "Prediction":
     
     st.markdown("<div class='motivational-quote'>Knowledge is power—always seek professional guidance.</div>", unsafe_allow_html=True)
 
+# Hospitals Page
+elif page == "Hospitals":
+    st.title("Hospitals Treating Breast Cancer in Egypt")
+    st.image("hospital.jpeg", use_container_width=True)
+    st.write("""
+    Below is a list of reputable hospitals in Egypt that specialize in breast cancer treatment. 
+    Contact these facilities for professional support, diagnosis, and treatment options.
+    """)
+    st.header("Hospital Contact Information")
+    st.write("""
+    - **Baheya Hospital**  
+      - **Specialization**: First hospital in Egypt dedicated to breast cancer treatment and early detection.  
+      - **Address**: 123 Health Street, Cairo, Egypt  
+      - **Phone**: +20 123 456 7890  
+      - **Email**: info@bahyahospital.org  
+      - **Website**: [www.bahyahospital.org](http://www.bahyahospital.org)[](https://www.baheya.org/en)
+
+    - **Dar Al Fouad Hospital**  
+      - **Specialization**: JCI-accredited hospital with extensive surgical experience, including tumor operations.  
+      - **Address**: 26th of July Corridor, Nasr City, Cairo, Egypt  
+      - **Phone**: +20 2 2529 2000  
+      - **Email**: info@daralfouad.org  
+      - **Website**: [www.daralfouad.org](http://www.daralfouad.org)[](https://www.lyfboat.com/hospitals/breast-cancer-hospitals-and-costs-in-egypt/)
+
+    - **Andalusia Smouha Hospital**  
+      - **Specialization**: Offers advanced diagnostics, surgical options, and hormone therapy for breast cancer.  
+      - **Address**: Smouha, Alexandria, Egypt  
+      - **Phone**: +20 3 427 7777  
+      - **Email**: info@andalusiahospitals.com  
+      - **Website**: [www.andalusiahospitals.com](http://www.andalusiahospitals.com)[](https://www.lyfboat.com/hospitals/breast-cancer-hospitals-and-costs-in-egypt/)
+
+    - **Cleopatra Hospital**  
+      - **Specialization**: Largest private hospital group in Egypt, recognized for oncology excellence.  
+      - **Address**: 39 Cleopatra St., Heliopolis, Cairo, Egypt  
+      - **Phone**: +20 2 2414 3931  
+      - **Email**: info@cleopatrahospital.com  
+      - **Website**: [www.cleopatrahospital.com](http://www.cleopatrahospital.com)[](https://my1health.com/articles/cancer-treatment-hospitals-egypt)
+
+    - **Cairo Oncology Center (Cairocure)**  
+      - **Specialization**: Largest private oncology facility in the Middle East, treating 1,800 new patients yearly.  
+      - **Address**: 55 Abdelmoneim Riad St., Cairo Medical Tower, Mohandesseen, Giza, Egypt  
+      - **Phone**: +20 2 3302 6814  
+      - **Email**: info@cairocure.com  
+      - **Website**: [www.cairocure.com](http://www.cairocure.com)[](https://www.breastcentresnetwork.org/breast-units/directory/Egypt/Cairo%2BOncology%2BCenter/4%2C9%2C650%2C)
+
+    - **National Cancer Institute (NCI) - Cairo**  
+      - **Specialization**: Leading cancer treatment and research center with multidisciplinary care.  
+      - **Address**: Kasr Al Ainy St., Fom El Khalig, Cairo, Egypt  
+      - **Phone**: +20 2 2364 8888  
+      - **Email**: info@nci.cu.edu.eg  
+      - **Website**: [www.nci.cu.edu.eg](http://www.nci.cu.edu.eg)[](https://www.uicc.org/membership/national-cancer-institute-cairo)
+
+    - **Alfa Cure Oncology Center**  
+      - **Specialization**: ESMO-designated center for integrated oncology and palliative care.  
+      - **Address**: Heliopolis, Cairo, Egypt  
+      - **Phone**: +20 2 2417 0000  
+      - **Email**: info@alfacure.com  
+      - **Website**: [www.alfacure.com](http://www.alfacure.com)[](https://www.esmo.org/for-patients/esmo-designated-centres-of-integrated-oncology-palliative-care/esmo-accredited-designated-centres/alfa-cure-center)
+    """)
+    st.markdown("<div class='motivational-quote'>You are stronger than you know. Take charge of your health today!</div>", unsafe_allow_html=True)
+
 # About Page
-elif page == "About":
+elif page == "About US":
     st.title("About the Breast Cancer Awareness App")
     st.write("""
     The Breast Cancer Awareness App is a dedicated platform designed to educate, empower, and support individuals in understanding breast cancer, 
